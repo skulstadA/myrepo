@@ -7,3 +7,7 @@ df2 <- df %>%
 write_csv(df2,here("data","data2.csv"))
 df
 df2
+
+# Create variable 'data3'
+df2 %>%
+  mutate(data3 = data2 - 10)
